@@ -19,7 +19,7 @@ return new class extends Migration
             $table->unsignedInteger('jumlah_titik');
             $table->unsignedBigInteger('biaya_per_titik');
             $table->enum('status_uji', ['Pending', 'In Analysis', 'Completed']);
-            $table->text('Catatan')->nullable();
+            $table->text('catatan_kondisi')->nullable();
             $table->timestamps();
         });
     }

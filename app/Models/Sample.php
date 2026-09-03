@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Sample extends Model
@@ -15,7 +16,7 @@ class Sample extends Model
         'jumlah_titik',
         'biaya_per_titik',
         'status_uji',
-        'Catatan',
+        'catatan_kondisi',
     ];
 
     protected $casts = [
